@@ -1,0 +1,50 @@
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual Environments (Local python environments)
+venv/
+.venv/
+env/
+ENV/
+bin/
+lib/
+include/
+
+# Streamlit local runtime state
+.streamlit/runtime/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs and Editors configuration
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Multi-GB raw datasets & extensions
+Raw_Datasets/
+*.pcap
+*.pcapng
+
+# ==========================================
+# Ignore Entire Dataset & Pipeline Folders
+# ==========================================
+TON-IOT-V3/
+CIC-IDS-2017/
+CIC-IDS-2018/
+Cross Validation pipeline/
+
+Real_Time_Export/SMOTE/
+
+RT-DeepNIDS.py
+app.py
+backend.py
