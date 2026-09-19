@@ -18,7 +18,7 @@ pinned: false
 ![License](https://img.shields.io/badge/License-MIT-gray)
 
 Online deployment of **RT-DeepNIDS: A Real-Time Hybrid Network Intrusion
-Detection System for IT and IoT Environments** the hosted, browser-based
+Detection System for IT and IoT Environments** — the hosted, browser-based
 dashboard that serves the trained models for interactive intrusion detection.
 
 > Undergraduate capstone research — Department of Computer Science and
@@ -54,19 +54,34 @@ folder.
 | SHAP explanations | ✅ |
 | Port-scan heuristic | ✅ |
 
-> **Note:** The **ToN-IoT-v3 · Random Forest** model is not included in this
-> hosted build because its trained file exceeds the hosting storage limit
-> (over 1 GB). Every other configuration runs normally; the full model set is
-> available in the local deployment.
+> **Note:** Because of the hosting storage limit, not every trained model is
+> uploaded to the Space (the **ToN-IoT-v3 · Random Forest** file alone is over
+> 1 GB). Every other configuration runs normally online, and the **complete
+> `Real_Time_Export/` model set** can be downloaded here:
+>
+> **Models & assets:** https://tinyurl.com/Real-Time-Export
 
 ---
 
-## 🔗 Full Project & Local Deployment
+## Trained Models
+
+The complete set of trained models, scalers, and sample traffic files
+(`Real_Time_Export/`) is hosted on Google Drive (too large for GitHub /
+Hugging Face):
+
+**Download: https://tinyurl.com/Real-Time-Export**
+
+After downloading, place the `Real_Time_Export/` folder in the project root so
+it sits next to `dashboard.py`, then run the app.
+
+---
+
+## Full Project & Local Deployment
 
 - **Full project (training pipelines, datasets, methodology, deployment):**
-  [sanjida-khanom/RT-DeepNIDS](https://github.com/sanjida-khanom/RT-DeepNIDS-A-Real-Time-Hybrid-Network-Intrusion-Detection-System-for-IT-and-IoT-Environments)
+  [Capstone-Project/RT-DeepNIDS](https://github.com/sanjida-khanom/RT-DeepNIDS-A-Real-Time-Hybrid-Network-Intrusion-Detection-System-for-IT-and-IoT-Environments)
 
-- **Local deployment with live Scapy packet capture** — full setup and usage
+- **Local deployment with live Scapy packet capture** full setup and usage
   instructions are in the
   [`Real_Time_Deployment/`](https://github.com/sanjida-khanom/RT-DeepNIDS-A-Real-Time-Hybrid-Network-Intrusion-Detection-System-for-IT-and-IoT-Environments/tree/main/Real_Time_Deployment)
   folder of the main repository.
@@ -148,5 +163,5 @@ automatically.
 | Sadia Mehrin Rahi | 22234103122 |
 | Istiyak Hasan Maruf | 22234103130 |
 
-**Bangladesh University of Business and Technology (BUBT)** — Department of Computer
+Bangladesh University of Business and Technology (BUBT) — Department of Computer
 Science and Engineering.
