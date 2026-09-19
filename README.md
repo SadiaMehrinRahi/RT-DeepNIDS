@@ -10,7 +10,7 @@ app_file: dashboard.py
 pinned: false
 ---
 
-# RT-DeepNIDS — Live Demo
+# RT-DeepNIDS Live Demo
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Hugging%20Face%20Space-blue?logo=huggingface)](https://sadiamehrinrahi-rt-deepnids.hf.space/)
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
@@ -18,7 +18,7 @@ pinned: false
 ![License](https://img.shields.io/badge/License-MIT-gray)
 
 Online deployment of **RT-DeepNIDS: A Real-Time Hybrid Network Intrusion
-Detection System for IT and IoT Environments** — the hosted, browser-based
+Detection System for IT and IoT Environments** the hosted, browser-based
 dashboard that serves the trained models for interactive intrusion detection.
 
 > Undergraduate capstone research — Department of Computer Science and
@@ -32,7 +32,7 @@ dashboard that serves the trained models for interactive intrusion detection.
 **https://sadiamehrinrahi-rt-deepnids.hf.space/**
 
 Deployed on **Hugging Face Spaces**. Just open the link, pick a configuration in
-the control panel, and press **Start** — no installation needed.
+the control panel, and press **Start** no installation needed.
 
 ---
 
@@ -42,7 +42,9 @@ This repository is the **online (cloud) build** of RT-DeepNIDS. It runs in
 **CSV Simulation** mode only: cloud hosting cannot capture live network
 packets, so the dashboard replays exported test traffic through the trained
 models. The full version with **live Scapy packet capture** runs locally
-(see the main project repository).
+see the [main project repository](https://github.com/sanjida-khanom/RT-DeepNIDS-A-Real-Time-Hybrid-Network-Intrusion-Detection-System-for-IT-and-IoT-Environments)
+and its [`Real_Time_Deployment/`](https://github.com/sanjida-khanom/RT-DeepNIDS-A-Real-Time-Hybrid-Network-Intrusion-Detection-System-for-IT-and-IoT-Environments/tree/main/Real_Time_Deployment)
+folder.
 
 | Capability | This online build |
 |------------|:------------------:|
@@ -59,17 +61,29 @@ models. The full version with **live Scapy packet capture** runs locally
 
 ---
 
+## 🔗 Full Project & Local Deployment
+
+- **Full project (training pipelines, datasets, methodology, deployment):**
+  [sanjida-khanom/RT-DeepNIDS](https://github.com/sanjida-khanom/RT-DeepNIDS-A-Real-Time-Hybrid-Network-Intrusion-Detection-System-for-IT-and-IoT-Environments)
+
+- **Local deployment with live Scapy packet capture** — full setup and usage
+  instructions are in the
+  [`Real_Time_Deployment/`](https://github.com/sanjida-khanom/RT-DeepNIDS-A-Real-Time-Hybrid-Network-Intrusion-Detection-System-for-IT-and-IoT-Environments/tree/main/Real_Time_Deployment)
+  folder of the main repository.
+
+---
+
 ## Features
 
-- **CSV Simulation** — streams exported test traffic through the trained models
+- **CSV Simulation:** Streams exported test traffic through the trained models
   in real time, matching the reported evaluation accuracy.
-- **Models** — Decision Tree, Random Forest, XGBoost, Hybrid CNN-GRU, and
+- **Models:** Decision Tree, Random Forest, XGBoost, Hybrid CNN-GRU, and
   CNN+Transformer.
-- **Four evaluation modes** — CIC-IDS-2017, CIC-IDS-2018, ToN-IoT-v3, and
+- **Four evaluation modes:** CIC-IDS-2017, CIC-IDS-2018, ToN-IoT-v3, and
   Cross-Domain (zero-day robustness test).
-- **Dual-pipeline** — SMOTE (high precision) vs. Tomek Links + IHT (high speed).
-- **Explainable AI (SHAP)** — every attack verdict can be explained on demand.
-- **Live KPIs & charts** — threat classification, traffic activity, and a
+- **Dual-pipeline:** SMOTE (high precision) vs. Tomek Links + IHT (high speed).
+- **Explainable AI (SHAP):** Every attack verdict can be explained on demand.
+- **Live KPIs & charts:** Threat classification, traffic activity, and a
   streaming detection log.
 
 ---
@@ -134,5 +148,5 @@ automatically.
 | Sadia Mehrin Rahi | 22234103122 |
 | Istiyak Hasan Maruf | 22234103130 |
 
-Bangladesh University of Business and Technology (BUBT) — Department of Computer
+**Bangladesh University of Business and Technology (BUBT)** — Department of Computer
 Science and Engineering.
