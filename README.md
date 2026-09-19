@@ -118,27 +118,45 @@ it sits next to `dashboard.py`, then run the app.
 ---
 
 ## Run Locally (Optional)
-
-The app is already live on Hugging Face, but to run this build yourself:
-
+ 
+Pick the version you need:
+ 
+### Option A: CSV Simulation only (this repo)
+ 
+This build runs **CSV Simulation** only (same as the hosted demo).
+ 
 ```bash
 # 1. Clone
 git clone https://github.com/SadiaMehrinRahi/RT-DeepNIDS.git
 cd RT-DeepNIDS
-
+ 
 # 2. Create a virtual environment
 python -m venv venv
 venv\Scripts\activate           # Windows
 # source venv/bin/activate      # Linux / macOS
-
+ 
 # 3. Install dependencies
 python -m pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
-
+ 
 # 4. Run
 streamlit run dashboard.py
 ```
 The dashboard opens at `http://localhost:8501`.
+ 
+### Option B: CSV Simulation **and** Live Network capture
+ 
+For **both** CSV Simulation and live network (Wi-Fi / Ethernet) packet capture,
+use the `Real_Time_Deployment/` folder in the main project repository, it has
+the full app and step-by-step setup instructions:
+ 
+**https://github.com/sanjida-khanom/RT-DeepNIDS-A-Real-Time-Hybrid-Network-Intrusion-Detection-System-for-IT-and-IoT-Environments/tree/main/Real_Time_Deployment**
+ 
+```bash
+git clone https://github.com/sanjida-khanom/RT-DeepNIDS-A-Real-Time-Hybrid-Network-Intrusion-Detection-System-for-IT-and-IoT-Environments.git
+cd RT-DeepNIDS-A-Real-Time-Hybrid-Network-Intrusion-Detection-System-for-IT-and-IoT-Environments/Real_Time_Deployment
+# then follow that folder's README (needs admin/sudo + Npcap for live capture)
+```
 
 ---
 
