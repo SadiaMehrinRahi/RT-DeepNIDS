@@ -18,7 +18,7 @@ pinned: false
 ![License](https://img.shields.io/badge/License-MIT-gray)
 
 Online deployment of **RT-DeepNIDS: A Real-Time Hybrid Network Intrusion
-Detection System for IT and IoT Environments** — the hosted, browser-based
+Detection System for IT and IoT Environments** the hosted, browser-based
 dashboard that serves the trained models for interactive intrusion detection.
 
 > Undergraduate capstone research — Department of Computer Science and
