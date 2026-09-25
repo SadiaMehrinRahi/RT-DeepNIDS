@@ -1,5 +1,5 @@
 ---
-title: RT-DeepNIDS
+title: RT-DeepNIDS Real time web Deployment
 emoji: 🛡️
 colorFrom: blue
 colorTo: indigo
